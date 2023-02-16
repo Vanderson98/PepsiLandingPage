@@ -7,20 +7,20 @@ let menuBurgerButton = document.querySelector('.menuBurger')
 
 let imagemPepsi = 'assets/img/PepsiLata'
 
-pepsiAzul.addEventListener('mouseover', ()=>{
-    mudarLata('Azul')
+pepsiAzul.addEventListener('mouseover', () => {
+	mudarLata('Azul')
 })
 
-pepsiBlack.addEventListener('mouseover', ()=>{
-    mudarLata('Preta')
+pepsiBlack.addEventListener('mouseover', () => {
+	mudarLata('Preta')
 })
 
-pepsiGreen.addEventListener('mouseover',()=>{
-    mudarLata('Twist')
+pepsiGreen.addEventListener('mouseover', () => {
+	mudarLata('Twist')
 })
 
-let mudarLata = (color)=>{
-    imagemLata.setAttribute('src', `${imagemPepsi}${color}.png`)
+let mudarLata = (color) => {
+	imagemLata.setAttribute('src', `${imagemPepsi}${color}.png`)
 }
 
 // Menu click
@@ -32,43 +32,43 @@ let body = document.querySelector('body')
 let html = document.querySelector('html')
 let navList = document.querySelector('.navList')
 
-let menuClicked = ()=>{
-    overflowCss('hidden')
+let menuClicked = () => {
+	overflowCss('hidden')
 
-    //menuBurger.style.marginTop='-15px'
-    menuBurger.classList.add('menuOpen')
-    navList.classList.add('active')
-    line1.classList.add('active')
-    line2.classList.add('active')
-    line3.classList.add('active')
+	//menuBurger.style.marginTop='-15px'
+	menuBurger.classList.add('menuOpen')
+	navList.classList.add('active')
+	line1.classList.add('active')
+	line2.classList.add('active')
+	line3.classList.add('active')
 
-    // Setar onclick botão
-    menuBurgerButton.setAttribute('onclick','closeMenu()')
+	// Setar onclick botão
+	menuBurgerButton.setAttribute('onclick', 'closeMenu()')
 }
 
-let closeMenu = ()=>{
-    overflowCss('auto')
+let closeMenu = () => {
+	overflowCss('auto')
 
-    menuBurger.classList.remove('menuOpen')
-    navList.classList.remove('active')
-    line1.classList.remove('active')
-    line2.classList.remove('active')
-    line3.classList.remove('active')
+	menuBurger.classList.remove('menuOpen')
+	navList.classList.remove('active')
+	line1.classList.remove('active')
+	line2.classList.remove('active')
+	line3.classList.remove('active')
 
-    // Setar onclick botão
-    menuBurgerButton.setAttribute('onclick','menuClicked()')
+	// Setar onclick botão
+	menuBurgerButton.setAttribute('onclick', 'menuClicked()')
 }
 
-let overflowCss = (action)=>{
-    if(action=='hidden'){
-        body.style.overflowY=action
-        html.style.overflowY=action
-    }else if(action == 'auto'){
-        body.style.overflowY=action
-        html.style.overflowY=action
-    }
+let overflowCss = (action) => {
+	if (action == 'hidden') {
+		body.style.overflowY = action
+		html.style.overflowY = action
+	} else if (action == 'auto') {
+		body.style.overflowY = action
+		html.style.overflowY = action
+	}
 }
 
 let data = new Date()
 let ano = data.getFullYear()
-let anoSpan = document.querySelector('.ano').innerHTML=ano
+let anoSpan = document.querySelector('.ano').innerHTML = ano

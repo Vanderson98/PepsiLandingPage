@@ -5,14 +5,11 @@
     border: none;
     box-sizing: border-box;
 }
-
 body{
     background-color: #4682B4;
     color:#fdfdfd;
     height: 100vh;
 }
-
-
 /* Formatação menu */
 .menu{
     display: flex;
@@ -22,38 +19,31 @@ body{
     margin-top: -10px;
     justify-content: space-between;
 }
-
 .logoIcon{
     width:10%;
 }
-
 .logoIcon img{
     width: 100%;
 }
-
 .menu nav ul{
     overflow: hidden;
     display:flex;
     transition: max-height .2s ease-out;
     list-style-type: none;
 }
-
 .menu nav ul li{
     margin:0 15px;
 }
-
 .menu nav ul li a, .logoIcon a{
     color:#fdfdfd;
     font-weight: 600;
     text-decoration: none;
     font-size: 1rem;
 }
-
 .menu nav ul li a{
     padding: 20px 5px;
     transition: 250ms;
 }
-
 /* Formatação menu botão */
 .menuBurger{
     display: none;
@@ -61,7 +51,6 @@ body{
     margin-top: -10px;
     z-index: 2;
 }
-
 /* Linhas burger */
 .line1, .line2, .line3{
     background: #fdfdfd;
@@ -71,27 +60,21 @@ body{
     height: 5px;
     transform: rotate(0deg);
 }
-
 .line1.active{
     margin-top: 10px;
     transform: rotate(45deg);
 }
-
 .line1, .line2, .line3,.line1.active, .line3.active{
     transition: 250ms;
 }
-
 .line2.active{
     display: none;
     transition: 0ms;
 }
-
 .line3.active{
     margin-top: -10px;
     transform: rotate(-45deg);
 }
-
-
 /* Formataçao conteudos */
 .contentsMain, .clipPepsi{
     margin-top: 6.5% !important;
@@ -154,15 +137,12 @@ body{
     transition: 250ms;
     color:#fdfdfd;
 }
-
-.iconSocial a:hover,
-.menu nav ul li a:hover{
+.iconSocial a:hover, .menu nav ul li a:hover{
     color:#c6c6c6;
 }
 .iconSocial .fa-brands{
     margin: 25px 0;
 }
-
 /* Formatação latas botões */
 .otherLatas{
     display: flex;
@@ -184,19 +164,18 @@ body{
 .otherLatas img{
     width: 50%;
 }
-
 /* Clip pepsi formatação */
 .clipPepsi{
     background: #fdfdfd;
     color:#252525;
     padding: 20px 0;
     padding-bottom:100px;
-    /* padding: 10px 160px; */
+   /* padding: 10px 160px;
+    */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .clipPepsi h3{
     text-transform:capitalize;
     font-size: 1.6rem;
@@ -204,17 +183,14 @@ body{
     flex-direction: column;
     align-items: center;
 }
-
 .clipPepsi h4{
     font-size: .7rem;
     margin-top: 5px;
-    color: 	#C0C0C0;
+    color: #C0C0C0;
 }
-
 .soccerStar{
     color:rgb(216, 184, 6);
 }
-
 .iframePepsi{
     margin: 0 auto;
     margin-top: 50px;
@@ -222,7 +198,6 @@ body{
     width: 730px;
     height: 400px;
 }
-
 /* Formatação rodapé */
 .rodape{
     padding:20px 10px;
@@ -230,7 +205,6 @@ body{
     display:flex;
     justify-content: center;
 }
-
 .rodape h3{
     font-size: .9rem;
     font-weight: 500;
@@ -239,81 +213,68 @@ body{
     flex-direction:column;
     align-items: center;
 }
-
 @media(min-width:2000px){
     .imageContent{
         justify-content:end;
-    }
+   }
 }
-
 @media(min-width:1200px){
     .contentsMain{
         margin: 0 auto;
         width: 80%;
-    }
+   }
     .imageContent{
-        margin:0 !important; 
-    }
+        margin:0 !important;
+   }
     .iframePepsi{
         width: 900px;
         height: 600px;
-    }
+   }
 }
-
 @media(max-width:1200px){
     .menu{
         width: 95%;
-    }
+   }
     .logoIcon{
         width: 15%;
-    }
+   }
 }
-
 @media(min-width:992px){
     .imageContent{
         margin: 0 35px 0 0;
-    }
+   }
 }
-
 @media(max-width:992px){
     .logoIcon{
         width: 20%;
-    }
-
+   }
     .menu{
         margin-top: -15px;
-    }
-
+   }
     .menu nav ul li a{
         font-size: 1rem;
-    }
-
+   }
     .imageContent{
         justify-content: center;
-    }
-
+   }
     .imageContent img{
         width: 90%;
-    }
-
+   }
     .titleContent{
         font-size: 2.5rem;
-    }
-
+   }
     .textSepareted{
         font-size: 3.5rem;
-    }
+   }
     .paragraphText{
         width: 100%;
         font-size: 1.18rem;
-    }
-    
+   }
     .otherLatas img{
         width: 80%;
         margin: 0 10px;
-    }
-
-    /* Menu responsivo botão */
+   }
+   /* Menu responsivo botão */
     .navList{
         top: -1200px;
         border-radius: 20px;
@@ -324,81 +285,76 @@ body{
         position: absolute;
         transition: .5s;
         z-index: 1;
-    }
-
+   }
     .navList.active{
         top: 0;
         left: 0;
-    }
-
+   }
     .navList ul{
         flex-direction: column;
         align-items: center;
         margin-top: 45px;
-    }
-
+   }
     .menu nav ul li{
         margin: 8% 0;
-    }
-    
+   }
     .menuBurger{
         display: block;
-    }
+   }
 }
-
 @media(max-width:592px){
     .menu, .contentsMain{
         padding:10px;
-    }
+   }
     .w50{
         width: auto;
-    }
+   }
     .contentsMain{
         flex-direction: column-reverse;
         align-items: center;
-    }
+   }
     .textsContent{
         margin-top: 15%;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+   }
     .titleContent{
         text-align: center;
         font-size: 2rem;
-    }
+   }
     .paragraphText{
         text-align: justify;
         font-size: 1.1rem;
-    }
+   }
     .viewProducts{
         width: 90%;
-    }
+   }
     .logoIcon{
         width: 45%;
-    }
+   }
     .imageContent img{
         margin: 0;
-    }
+   }
     .otherLatas{
         margin-top: 10%;
-    }
+   }
     .otherLatas img{
         width:60%;
         margin:0;
-    }
+   }
     .otherLatas button{
         margin: 0 2px;
         width: 30%;
-    }
+   }
     .menuBurger{
         margin-top: -10px !important;
-    }
+   }
     .menu nav ul li{
         margin: 15% 0;
-    }
+   }
     .iframePepsi{
         width: 310px;
         height: 220px;
-    }
+   }
 }
